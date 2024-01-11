@@ -1,0 +1,26 @@
+/*section imagenes*/
+#oferta {
+    width: 100%;
+    height: auto;
+    background-color: khaki;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+.of {
+    background-color: khaki;
+    border: 0px solid;
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+}
+.of img {
+width: 300px;
+height: 300px;
+}

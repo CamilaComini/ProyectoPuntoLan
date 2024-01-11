@@ -1,0 +1,19 @@
+{
+  "name": "proyectopuntolan",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CamilaComini/ProyectoPuntoLan.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CamilaComini/ProyectoPuntoLan/issues"
+  },
+  "homepage": "https://github.com/CamilaComini/ProyectoPuntoLan#readme"
+}

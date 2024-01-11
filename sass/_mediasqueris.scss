@@ -1,0 +1,30 @@
+/*mediasqueris*/
+@media (max-width: 600px){
+    #footer {
+    flex-direction:column;
+    }
+    #nav{
+        flex-direction: column;
+    }
+    #header{
+        flex-direction: column;
+    }
+    #oferta{
+        flex-direction:column;
+    }
+    }
+    @media (min-width: 300px) and (max-width: 500px){
+        #footer{
+            flex-direction:column;
+        }
+        #nav{
+            flex-direction: column;
+        }
+        #header{
+            flex-direction: column;
+        }
+        #oferta{
+            flex-direction:column;
+        }
+    }
+    

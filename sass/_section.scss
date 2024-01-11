@@ -1,0 +1,99 @@
+/*SPV=
+selector=etiqueta/clase/id
+propiedad=nombre que da estructura
+valor=tamaño o valor que adquiere esa propiedas
+*/
+/*Estilos de letras*/
+/*section*/
+.article1 h1 { 
+    color:red;
+    font-size:60px;
+    font-family: 'Permanent Marker', cursive;
+}
+.article3 h2{
+    color:black;
+    font-size:50px ;
+    font-family: 'Permanent Marker', cursive;
+}
+.article3 h3{
+    color:black;
+    font-size:40px;
+    font-family: 'Permanent Marker', cursive;
+}
+.article2 video {
+margin:0px;
+width:100%;
+height:100%;
+}
+.article4 img{
+    margin: 10px;
+    width:400px;
+    height:400px;
+}
+.aticleh1 {
+    color:black;
+    font-size:40px;
+    font-family: 'Permanent Marker', cursive;  
+}
+/*section nosotros*/
+.letras h2{   
+    color:red;
+    font-size:80px;
+    font-family: 'Permanent Marker', cursive; 
+} 
+.letras h1{
+    color:black;
+    font-size:40px;
+    font-family: 'Permanent Marker', cursive;  
+}
+#boxg {
+margin-top:0;
+display: grid;
+grid-template-columns: 500px 500px;
+grid-template-rows: 500px 500px ;
+gap:100px;
+margin-left: 100px;
+} 
+.box img {
+color: khaki;
+width: 100%;
+height: 100%;
+}
+#palabras{
+    margin-top: 50px;
+    color:black;
+    font-size:30px ;
+    font-family: 'Brygada 1918', serif;  
+}
+
+/*logos*/
+#articlelogo {
+    width: 100%;
+    height: auto;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+.letra h5 {
+    color:white;
+    font-size:40px;
+    font-family: 'Permanent Marker', cursive;  
+}
+.logo {
+    background-color: black;
+    border: 0px solid;
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+}
+.logo img {
+    width: 100px;
+    height: 100px;
+}

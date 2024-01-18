@@ -1,26 +1,16 @@
-/*nav-header*/
-#nav {
-    background-color: red;
-}
 #header {
     width: 100%;
     height: auto;
-    background-color: white;
     display: flex;
     align-items: self-end;
     justify-content:right;
-    gap: 20px;
+    gap: 10px;
     padding: 20px;
+    margin-top: auto;
 }
-#header h1 { 
-    display: inline-block;
-    color:red;
-    font-size:80px;
-    font-family: 'Brygada 1918', serif;
-}
-#header h2{
+#header { 
     color:black;
-    font-size:70px ;
+    font-size:30px;
     font-family: 'Brygada 1918', serif;
 }
 #header img{
@@ -28,9 +18,9 @@ width:80px;
 height:80px;
 }
 .ul li{
-font-size:30px; ;
+font-size:30px; 
 display: inline-block;
 justify-content: center;
-margin:50px;
+margin:30px;
 border-radius: 0;
 }

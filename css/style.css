@@ -1,12 +1,7 @@
 @charset "UTF-8";
-/*SPV=
-selector=etiqueta/clase/id
-propiedad=nombre que da estructura
-valor=tamaño o valor que adquiere esa propiedas
-*/
-/*Estilos de letras*/
 @import url("https://fonts.googleapis.com/css2?family=Brygada+1918:wght@500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
+/*imports*/
 /*Reseteamos los estilos*/
 * {
   margin: 0;
@@ -25,38 +20,20 @@ a {
   text-decoration: none;
 }
 
-/**/
-#body {
-  max-width: 1440px;
-  min-height: 100vh margin auto;
-}
-
-/*nav-header*/
-#nav {
-  background-color: red;
-}
-
 #header {
   width: 100%;
   height: auto;
-  background-color: white;
   display: flex;
   align-items: self-end;
   justify-content: right;
-  gap: 20px;
+  gap: 10px;
   padding: 20px;
+  margin-top: auto;
 }
 
-#header h1 {
-  display: inline-block;
-  color: red;
-  font-size: 80px;
-  font-family: "Brygada 1918", serif;
-}
-
-#header h2 {
+#header {
   color: black;
-  font-size: 70px;
+  font-size: 30px;
   font-family: "Brygada 1918", serif;
 }
 
@@ -69,20 +46,24 @@ a {
   font-size: 30px;
   display: inline-block;
   justify-content: center;
-  margin: 50px;
+  margin: 30px;
   border-radius: 0;
 }
 
-/*section*/
+/*SPV=
+selector=etiqueta/clase/id
+propiedad=nombre que da estructura
+valor=tamaño o valor que adquiere esa propiedas
+*/
 .article1 h1 {
-  color: red;
-  font-size: 60px;
+  color: black;
+  font-size: 45px;
   font-family: "Permanent Marker", cursive;
 }
 
 .article3 h2 {
   color: black;
-  font-size: 50px;
+  font-size: 45px;
   font-family: "Permanent Marker", cursive;
 }
 
@@ -110,14 +91,69 @@ a {
   font-family: "Permanent Marker", cursive;
 }
 
-/*section nosotros*/
+#footer {
+  margin-top: 20px;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: space-around;
+  padding: 0 20px;
+  align-items: center;
+}
+
+.article6 img {
+  text-align: center;
+  margin: 5px;
+  width: 60px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  display: inline-block;
+}
+
+#articlelogo {
+  margin-top: 20px;
+  width: 100%;
+  height: auto;
+  background: linear-gradient(55deg, black, white, black);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.letra h5 {
+  color: black;
+  font-size: 40px;
+  font-family: "Permanent Marker", cursive;
+}
+
+.logo {
+  border: 0px solid;
+  width: auto;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo img {
+  width: 100px;
+  height: 100px;
+}
+
 .letras h2 {
-  color: red;
-  font-size: 80px;
+  text-align: center;
+  color: black;
+  font-size: 60px;
   font-family: "Permanent Marker", cursive;
 }
 
 .letras h1 {
+  text-align: center;
   color: black;
   font-size: 40px;
   font-family: "Permanent Marker", cursive;
@@ -126,14 +162,12 @@ a {
 #boxg {
   margin-top: 0;
   display: grid;
-  grid-template-columns: 500px 500px;
-  grid-template-rows: 500px 500px;
-  gap: 100px;
-  margin-left: 100px;
+  grid-template-columns: 400px 400px 400px;
+  gap: 20px;
+  margin-left: 50px;
 }
 
 .box img {
-  color: khaki;
   width: 100%;
   height: 100%;
 }
@@ -149,7 +183,6 @@ a {
 #oferta {
   width: 100%;
   height: auto;
-  background-color: khaki;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -159,7 +192,6 @@ a {
 }
 
 .of {
-  background-color: khaki;
   border: 0px solid;
   width: auto;
   height: auto;
@@ -174,42 +206,24 @@ a {
   height: 300px;
 }
 
-/*logos*/
-#articlelogo {
-  width: 100%;
-  height: auto;
-  background-color: black;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 50px;
-  flex-wrap: wrap;
-  padding: 20px;
+#body {
+  max-width: 1440px;
+  min-height: 100vh margin auto;
 }
 
-.letra h5 {
-  color: white;
-  font-size: 40px;
-  font-family: "Permanent Marker", cursive;
+#body {
+  background: linear-gradient(55deg, red, white, red);
+  background-size: auto;
+  position: relative;
 }
 
-.logo {
-  background-color: black;
-  border: 0px solid;
-  width: auto;
-  height: auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+#nav {
+  background: none;
+  background-size: auto;
+  position: relative;
+  width: 75%;
 }
 
-.logo img {
-  width: 100px;
-  height: 100px;
-}
-
-/*mediasqueris*/
 @media (max-width: 600px) {
   #footer {
     flex-direction: column;
@@ -238,5 +252,24 @@ a {
     flex-direction: column;
   }
 }
+#boxarticle {
+  margin: 5px;
+  width: 60px;
+  height: 60px;
+  align-items: center;
+  display: flex;
+}
 
-/*# sourceMappingURL=style.css.map */
+#parrafoinformacion {
+  margin-top: 50px;
+  color: black;
+  font-size: 30px;
+  font-family: "Brygada 1918", serif;
+}
+
+#pedido h2 {
+  text-align: center;
+  color: black;
+  font-size: 60px;
+  font-family: "Permanent Marker", cursive;
+}/*# sourceMappingURL=style.css.map */

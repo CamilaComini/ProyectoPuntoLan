@@ -1,15 +1,21 @@
-/*section imagenes*/
-#oferta {
+#articlelogo {
+    margin-top: 20px;
     width: 100%;
     height: auto;
+    background: linear-gradient(55deg,black,white,black);
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 30px;
+    gap: 50px;
     flex-wrap: wrap;
     padding: 20px;
 }
-.of {
+.letra h5 {
+    color:black;
+    font-size:40px;
+    font-family: 'Permanent Marker', cursive;  
+}
+.logo {
     border: 0px solid;
     width: auto;
     height: auto;
@@ -18,7 +24,7 @@
     justify-content: center;
     align-items: center;
 }
-.of img {
-width: 300px;
-height: 300px;
+.logo img {
+    width: 100px;
+    height: 100px;
 }

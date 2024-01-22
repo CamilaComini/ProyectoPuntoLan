@@ -8,6 +8,7 @@
     gap: 30px;
     flex-wrap: wrap;
     padding: 20px;
+    margin: auto;
 }
 .of {
     border: 0px solid;
@@ -17,8 +18,17 @@
     flex-direction:column;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
+    transition: all 500ms ease;
+    border-radius: 5px;
+    box-shadow: 1px 10px 15px rgba(0,0,0,0.50);
 }
 .of img {
 width: 300px;
 height: 300px;
+transition: all 500ms ease;
+}
+.of img:hover{
+    transform: scale(1.2);
+    cursor: pointer;
 }

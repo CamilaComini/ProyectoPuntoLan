@@ -3,6 +3,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
 /*imports*/
 /*Reseteamos los estilos*/
+@import "animate.css";
 * {
   margin: 0;
   padding: 0;
@@ -27,8 +28,7 @@ a {
   align-items: self-end;
   justify-content: right;
   gap: 10px;
-  padding: 20px;
-  margin-top: auto;
+  padding: auto;
 }
 
 #header {
@@ -59,24 +59,27 @@ valor=tamaño o valor que adquiere esa propiedas
   color: black;
   font-size: 45px;
   font-family: "Permanent Marker", cursive;
+  margin-left: 20px;
 }
 
 .article3 h2 {
   color: black;
   font-size: 45px;
   font-family: "Permanent Marker", cursive;
+  margin-left: 20px;
 }
 
 .article3 h3 {
   color: black;
   font-size: 40px;
   font-family: "Permanent Marker", cursive;
+  margin-left: 20px;
 }
 
 .article2 video {
-  margin: 0px;
-  width: 100%;
-  height: 100%;
+  width: 97%;
+  height: 97%;
+  margin-left: 20px;
 }
 
 .article4 img {
@@ -89,6 +92,7 @@ valor=tamaño o valor que adquiere esa propiedas
   color: black;
   font-size: 40px;
   font-family: "Permanent Marker", cursive;
+  margin-left: 20px;
 }
 
 #footer {
@@ -109,6 +113,96 @@ valor=tamaño o valor que adquiere esa propiedas
   display: flex;
   align-items: center;
   display: inline-block;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.sectionnn {
+  background: white;
+  font-family: "Brygada 1918", serif;
+  padding: 0 1.5em;
+}
+
+.content {
+  max-width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1.5em;
+}
+
+.logoo {
+  text-align: center;
+  font-size: 3em;
+}
+
+.contact-wrapper {
+  box-shadow: 0 0 20px 0 rgb(255, 255, 255);
+}
+
+.contact-form {
+  background: white;
+}
+
+.contact-form form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.contact-form form .block {
+  grid-column: 1/3;
+}
+
+.contact-form form p {
+  margin: 0;
+  padding: 1em;
+}
+
+.contact-form form button,
+.contact-form form input,
+.contact-form form textarea {
+  width: 100%;
+  padding: 0.7em;
+  border: none;
+  background: none;
+  border-bottom: 1px solid red;
+  outline: 0;
+}
+
+.contact-form form button {
+  background: red;
+  border: 0;
+  text-transform: uppercase;
+  padding: 1em;
+}
+
+.contact-form form button:hover,
+.contact-form form button:focus {
+  background: red;
+  color: white;
+  transition: background-color 1s ease-out;
+  outline: 0;
+}
+
+.contact-info {
+  background: white;
+}
+
+.contact-info h4,
+.contact-info ul,
+.contact-info p {
+  text-align: center;
+  margin: 0 0 1rem 0;
+}
+
+.contact-info ul {
+  list-style: none;
+  padding: 0;
+}
+
+.contact-info ul li {
+  padding: 0.3em;
 }
 
 #articlelogo {
@@ -174,6 +268,7 @@ valor=tamaño o valor que adquiere esa propiedas
 
 #palabras {
   margin-top: 50px;
+  margin-left: 20px;
   color: black;
   font-size: 30px;
   font-family: "Brygada 1918", serif;
@@ -189,6 +284,7 @@ valor=tamaño o valor que adquiere esa propiedas
   gap: 30px;
   flex-wrap: wrap;
   padding: 20px;
+  margin: auto;
 }
 
 .of {
@@ -199,16 +295,27 @@ valor=tamaño o valor que adquiere esa propiedas
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
+  transition: all 500ms ease;
+  border-radius: 5px;
+  box-shadow: 1px 10px 15px rgba(0, 0, 0, 0.5);
 }
 
 .of img {
   width: 300px;
   height: 300px;
+  transition: all 500ms ease;
+}
+
+.of img:hover {
+  transform: scale(1.2);
+  cursor: pointer;
 }
 
 #body {
   max-width: 1440px;
-  min-height: 100vh margin auto;
+  min-height: 100vh;
+  margin: auto;
 }
 
 #body {
@@ -237,6 +344,19 @@ valor=tamaño o valor que adquiere esa propiedas
   #oferta {
     flex-direction: column;
   }
+  .sectionnn {
+    padding: 0 4rem;
+  }
+  .contact-wrapper {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+  }
+  .contact-info h4,
+  .contact-info ul,
+  .contact-info p {
+    padding: 1em;
+    text-align: left;
+  }
 }
 @media (min-width: 300px) and (max-width: 500px) {
   #footer {
@@ -252,24 +372,62 @@ valor=tamaño o valor que adquiere esa propiedas
     flex-direction: column;
   }
 }
-#boxarticle {
-  margin: 5px;
-  width: 60px;
-  height: 60px;
-  align-items: center;
+.sectionn {
+  width: 100%;
+  height: auto;
   display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  padding: 20px;
+  margin: auto;
 }
 
-#parrafoinformacion {
-  margin-top: 50px;
-  color: black;
-  font-size: 30px;
+.carritoventa {
+  border: 0px solid;
+  width: auto;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  transition: all 500ms ease;
+  border-radius: 5px;
+}
+
+.imagencarrito {
+  background-color: black;
+  padding: 25px;
+  margin: 0 10px;
+}
+
+.productoo {
   font-family: "Brygada 1918", serif;
+  background-color: white;
+  padding: 25px;
+  margin: 0 10px;
 }
 
-#pedido h2 {
+.carritoventa {
+  box-shadow: 0 0 20px 0 rgb(0, 0, 0);
+}
+
+.productoo h4,
+.productoo ul,
+.productoo p {
   text-align: center;
-  color: black;
-  font-size: 60px;
-  font-family: "Permanent Marker", cursive;
+  margin: 0 0 1rem 0;
+}
+
+.imagencarrito img {
+  width: 300px;
+  height: 300px;
+  transition: all 500ms ease;
+}
+
+.imagencarrito img:hover {
+  transform: scale(1.2);
+  cursor: pointer;
 }/*# sourceMappingURL=style.css.map */

@@ -11,7 +11,20 @@
     #oferta{
         flex-direction:column;
     }
+    .sectionnn{
+        padding: 0 4rem;
     }
+    .contact-wrapper{
+        display:grid;
+        grid-template-columns: 2fr 1fr;
+    }
+    .contact-info h4,
+    .contact-info ul,
+    .contact-info p{ 
+    padding: 1em;
+    text-align: left;
+    }
+}
     @media (min-width: 300px) and (max-width: 500px){
         #footer{
             flex-direction:column;

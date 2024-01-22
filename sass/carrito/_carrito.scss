@@ -1,0 +1,52 @@
+.sectionn{
+width: 100%;
+height: auto;
+display: flex;
+align-items: center;
+justify-content: center;
+gap: 30px;
+flex-wrap: wrap;
+padding: 20px;
+margin: auto;
+}
+.carritoventa {
+    border: 0px solid;
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transition: all 500ms ease;
+    border-radius: 5px;
+}
+.imagencarrito{
+    background-color: black;
+    padding:25px;
+    margin: 0 10px;  
+}
+.productoo{
+    font-family: 'Brygada 1918', serif;
+    background-color: white;
+    padding:25px;
+    margin: 0 10px; 
+}
+.carritoventa{
+    box-shadow: 0 0 20px 0 rgb(0, 0, 0);
+}
+.productoo h4,
+.productoo ul,
+.productoo p{
+    text-align: center;
+    margin: 0 0 1rem 0;
+}
+.imagencarrito img {
+        width:300px;
+        height:300px;
+        transition: all 500ms ease;
+        }
+        .imagencarrito img:hover{
+            transform: scale(1.2);
+            cursor: pointer;
+        }

@@ -357,6 +357,10 @@ valor=tamaño o valor que adquiere esa propiedas
     padding: 1em;
     text-align: left;
   }
+  #boxg {
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr;
+  }
 }
 @media (min-width: 300px) and (max-width: 500px) {
   #footer {

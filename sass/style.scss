@@ -1,18 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Brygada+1918:wght@500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
-
 /*imports*/
+
+/*imports de header*/
 @import "reset";
+@import "body";
 @import "header";
+@import "nav";
+/*import de section*/
 @import"section";
-@import "footer";
+/*import de articles*/
 @import "contacto/contacto";
 @import "logos/logos";
 @import "nosotros/nosotros";
 @import "ofertas/ofertas";
-@import "body";
-@import "nav";
-@import "mediasqueris";
 @import "carrito/carrito";
-
+@import "texto";
+/*imports de footer*/
+@import "footer";
+/*imports raros*/
+@import "mediasqueris";
 @import "animate.css";

@@ -1,18 +1,20 @@
 #footer{
     margin-top: 20px;
     width:100%;
-    height: 100px;
+    height: 100%;
     display: flex;
     justify-content: space-around;
-    padding: 0 20px;
     align-items: center;
 }
-.article6 img {
-    text-align: center;
-    margin: 5px;
-    width: 60px;
-    height:100%;
-    display: flex;
-    align-items: center;
-    display: inline-block;
+.article6 img{
+    width: 80px;
+    height: 80px;
+    padding: 10px;
+    align-items:flex-end;
+}
+.redesc h6{
+    color:black;
+    font-size: 100%;
+    font-family: 'Brygada 1918', serif;
+    align-items: flex-start;
 }

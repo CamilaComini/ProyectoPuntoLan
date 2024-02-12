@@ -1,7 +1,7 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Brygada+1918:wght@500&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
 /*imports*/
+/*imports de header*/
 /*Reseteamos los estilos*/
 @import "animate.css";
 * {
@@ -21,6 +21,18 @@ a {
   text-decoration: none;
 }
 
+#body {
+  max-width: 1440px;
+  min-height: 100vh;
+  margin: auto;
+}
+
+#body {
+  background: linear-gradient(55deg, red, white, red);
+  background-size: auto;
+  position: relative;
+}
+
 #header {
   width: 100%;
   height: auto;
@@ -31,10 +43,11 @@ a {
   padding: auto;
 }
 
-#header {
+#header h1 {
   color: black;
-  font-size: 30px;
+  font-size: 50px;
   font-family: "Brygada 1918", serif;
+  align-items: center;
 }
 
 #header img {
@@ -47,9 +60,16 @@ a {
   display: inline-block;
   justify-content: center;
   margin: 30px;
-  border-radius: 0;
 }
 
+#nav {
+  background: none;
+  background-size: auto;
+  position: relative;
+  width: 75%;
+}
+
+/*import de section*/
 /*SPV=
 selector=etiqueta/clase/id
 propiedad=nombre que da estructura
@@ -57,22 +77,22 @@ valor=tamaño o valor que adquiere esa propiedas
 */
 .article1 h1 {
   color: black;
-  font-size: 45px;
-  font-family: "Permanent Marker", cursive;
+  font-size: 30px;
+  font-family: "Brygada 1918", serif;
   margin-left: 20px;
 }
 
 .article3 h2 {
   color: black;
-  font-size: 45px;
-  font-family: "Permanent Marker", cursive;
+  font-size: 30px;
+  font-family: "Brygada 1918", serif;
   margin-left: 20px;
 }
 
 .article3 h3 {
   color: black;
-  font-size: 40px;
-  font-family: "Permanent Marker", cursive;
+  font-size: 30px;
+  font-family: "Brygada 1918", serif;
   margin-left: 20px;
 }
 
@@ -90,31 +110,12 @@ valor=tamaño o valor que adquiere esa propiedas
 
 .aticleh1 {
   color: black;
-  font-size: 40px;
-  font-family: "Permanent Marker", cursive;
+  font-size: 30px;
+  font-family: "Brygada 1918", serif;
   margin-left: 20px;
 }
 
-#footer {
-  margin-top: 20px;
-  width: 100%;
-  height: 100px;
-  display: flex;
-  justify-content: space-around;
-  padding: 0 20px;
-  align-items: center;
-}
-
-.article6 img {
-  text-align: center;
-  margin: 5px;
-  width: 60px;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  display: inline-block;
-}
-
+/*import de articles*/
 * {
   box-sizing: border-box;
 }
@@ -209,7 +210,7 @@ valor=tamaño o valor que adquiere esa propiedas
   margin-top: 20px;
   width: 100%;
   height: auto;
-  background: linear-gradient(55deg, black, white, black);
+  background: none;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -219,9 +220,10 @@ valor=tamaño o valor que adquiere esa propiedas
 }
 
 .letra h5 {
+  margin-left: 20px;
   color: black;
-  font-size: 40px;
-  font-family: "Permanent Marker", cursive;
+  font-size: 100%;
+  font-family: "Brygada 1918", serif;
 }
 
 .logo {
@@ -239,39 +241,25 @@ valor=tamaño o valor que adquiere esa propiedas
   height: 100px;
 }
 
-.letras h2 {
-  text-align: center;
+#palabras h3 {
+  margin-top: 30px;
+  margin-left: 30px;
   color: black;
-  font-size: 60px;
-  font-family: "Permanent Marker", cursive;
-}
-
-.letras h1 {
-  text-align: center;
-  color: black;
-  font-size: 40px;
-  font-family: "Permanent Marker", cursive;
+  font-size: 30px;
+  font-family: "Brygada 1918", serif;
 }
 
 #boxg {
-  margin-top: 0;
+  margin-top: 10px;
   display: grid;
-  grid-template-columns: 400px 400px 400px;
+  grid-template-columns: 300px 300px 300px;
   gap: 20px;
-  margin-left: 50px;
+  margin-left: 30px;
 }
 
 .box img {
   width: 100%;
   height: 100%;
-}
-
-#palabras {
-  margin-top: 50px;
-  margin-left: 20px;
-  color: black;
-  font-size: 30px;
-  font-family: "Brygada 1918", serif;
 }
 
 /*section imagenes*/
@@ -312,70 +300,6 @@ valor=tamaño o valor que adquiere esa propiedas
   cursor: pointer;
 }
 
-#body {
-  max-width: 1440px;
-  min-height: 100vh;
-  margin: auto;
-}
-
-#body {
-  background: linear-gradient(55deg, red, white, red);
-  background-size: auto;
-  position: relative;
-}
-
-#nav {
-  background: none;
-  background-size: auto;
-  position: relative;
-  width: 75%;
-}
-
-@media (max-width: 600px) {
-  #footer {
-    flex-direction: column;
-  }
-  #nav {
-    flex-direction: column;
-  }
-  #header {
-    flex-direction: column;
-  }
-  #oferta {
-    flex-direction: column;
-  }
-  .sectionnn {
-    padding: 0 4rem;
-  }
-  .contact-wrapper {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-  }
-  .contact-info h4,
-  .contact-info ul,
-  .contact-info p {
-    padding: 1em;
-    text-align: left;
-  }
-  #boxg {
-    display: grid;
-    grid-template-columns: 2fr 2fr 2fr;
-  }
-}
-@media (min-width: 300px) and (max-width: 500px) {
-  #footer {
-    flex-direction: column;
-  }
-  #nav {
-    flex-direction: column;
-  }
-  #header {
-    flex-direction: column;
-  }
-  #oferta {
-    flex-direction: column;
-  }
-}
 .sectionn {
   width: 100%;
   height: auto;
@@ -434,4 +358,96 @@ valor=tamaño o valor que adquiere esa propiedas
 .imagencarrito img:hover {
   transform: scale(1.2);
   cursor: pointer;
+}
+
+.text h4 {
+  color: black;
+  font-size: 30px;
+  font-family: "Brygada 1918", serif;
+  margin-left: 20px;
+}
+
+.letras h2 {
+  text-align: center;
+  color: black;
+  font-size: 30px;
+  font-family: "Brygada 1918", serif;
+}
+
+.letras h1 {
+  text-align: center;
+  color: black;
+  font-size: 30px;
+  font-family: "Brygada 1918", serif;
+}
+
+/*imports de footer*/
+#footer {
+  margin-top: 20px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.article6 img {
+  width: 80px;
+  height: 80px;
+  padding: 10px;
+  align-items: flex-end;
+}
+
+.redesc h6 {
+  color: black;
+  font-size: 100%;
+  font-family: "Brygada 1918", serif;
+  align-items: flex-start;
+}
+
+/*imports raros*/
+@media (max-width: 600px) {
+  #footer {
+    flex-direction: column;
+  }
+  #nav {
+    flex-direction: column;
+  }
+  #header {
+    flex-direction: column;
+  }
+  #oferta {
+    flex-direction: column;
+  }
+  .sectionnn {
+    padding: 0 4rem;
+  }
+  .contact-wrapper {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+  }
+  .contact-info h4,
+  .contact-info ul,
+  .contact-info p {
+    padding: 1em;
+    text-align: left;
+  }
+  #boxg {
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr;
+  }
+}
+@media (min-width: 300px) and (max-width: 500px) {
+  #footer {
+    flex-direction: column;
+  }
+  #nav {
+    flex-direction: column;
+  }
+  #header {
+    flex-direction: column;
+  }
+  #oferta {
+    flex-direction: column;
+  }
 }/*# sourceMappingURL=style.css.map */

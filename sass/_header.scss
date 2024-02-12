@@ -7,10 +7,11 @@
     gap: 10px;
     padding: auto;
 }
-#header { 
+#header h1 { 
     color:black;
-    font-size:30px;
+    font-size: 50px;
     font-family: 'Brygada 1918', serif;
+    align-items:center;
 }
 #header img{
 width:80px;
@@ -20,6 +21,5 @@ height:80px;
 font-size:30px; 
 display: inline-block;
 justify-content: center;
-margin:30px;
-border-radius: 0;
+margin: 30px;
 }

@@ -2,7 +2,7 @@
     margin-top: 20px;
     width: 100%;
     height: auto;
-    background: linear-gradient(55deg,black,white,black);
+    background: none;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -10,10 +10,12 @@
     flex-wrap: wrap;
     padding: 20px;
 }
-.letra h5 {
+.letra h5{
+    margin-left: 20px;
     color:black;
-    font-size:40px;
-    font-family: 'Permanent Marker', cursive;  
+    font-size: 100%;
+    font-family: 'Brygada 1918', serif;
+    
 }
 .logo {
     border: 0px solid;
